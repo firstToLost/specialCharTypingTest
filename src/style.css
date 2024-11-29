@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  padding-inline: 2rem;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: white;
+}
+.words-container {
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+.words {
+  white-space: pre-wrap; /* Enables wrapping */
+  line-height: 2rem;
+  word-wrap: break-word;
+}
+.words .current {
+  animation: blink-animation 1s infinite; /* Animation name, duration, and infinite repetition */
+}
+.correct {
+  background: green;
+}
+.incorrect {
+  background: red;
+}
+/* Keyframes for the blink effect */
+@keyframes blink-animation {
+  0% {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
