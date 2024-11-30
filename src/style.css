@@ -12,10 +12,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-h1 {
   color: white;
 }
+
 .words-container {
   border: 1px solid gray;
   border-radius: 2px;
